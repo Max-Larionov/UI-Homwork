@@ -1,0 +1,56 @@
+body{
+    background-color: #555;
+    color: white;
+}
+.paper{
+    width: 700px;
+    margin: 50px auto;
+}
+.clear{
+    clear: both;
+}
+.paper .image{
+    border: 20px solid white;
+    width: 700px;
+    height: 700px;
+    box-sizing: border-box;
+    background-image: url(images/281-700x700.jpg);    
+}
+.paper .top-left-shadow,
+.paper .top-right-shadow,
+.paper .bottom-left-shadow,
+.paper .bottom-right-shadow{
+    width: 350px;
+    height: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.paper:hover .image .gradient{
+    height: 660px;
+    background-image: linear-gradient(90deg,#0004,#fffb,#0004);
+}
+.paper:hover .top-left-shadow{
+    box-shadow: 7px -10px 10px 5px  #111;
+    transform: rotate(2deg) translateY(30px);
+    position: relative;
+    z-index: -1;
+}
+.paper:hover .top-right-shadow{
+    box-shadow: -7px -10px 10px 5px  #111;
+    transform: rotate(-2deg) translateY(30px);
+    position: relative;
+    z-index: -1;
+}
+.paper:hover .bottom-left-shadow{
+    box-shadow: 7px 10px 10px 5px  #111;
+    transform: rotate(-2deg) translateY(-30px);
+    position: relative;
+    z-index: -1;
+}
+.paper:hover .bottom-right-shadow{
+    box-shadow: -7px 10px 10px 5px  #111;
+    transform: rotate(2deg) translateY(-30px);
+    position: relative;
+    z-index: -1;
+}
