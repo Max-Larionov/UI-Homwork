@@ -1,0 +1,69 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);
+a{
+    text-decoration: none;
+}
+.navbar{
+    position: relative;
+    background-color: #0054ad;
+    padding: 0 2%;  
+}
+.navbar a{
+    color: #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    padding: .75em;
+    font-size: .75em;
+}
+.navbar a:first-child{
+    font-family: italic;
+    margin-right: 1em;
+    font-size: 3em;
+    line-height: .1em;
+    color: white;
+}
+.navbar a:last-child,
+.more{
+    display: none;
+}
+
+/* sm styles */
+@media (max-width: 1000px){
+    .navbar a{
+        display: none;
+    }
+    .navbar a:first-child,
+    .navbar a:last-child,
+    .more{
+        display: inline-block;
+    }
+    .navbar a:first-child{
+        padding-left: 0;
+    }
+    .navbar a:last-child{
+        position: absolute;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        right: 10%;
+        top: 2em;
+    } 
+ 
+    
+    .navbar:target a:nth-child(2),
+    .navbar:target a:nth-child(3),
+    .navbar:target a:nth-child(4),
+    .navbar:target a:nth-child(5),
+    .navbar:target a:nth-child(6),
+    .navbar:target a:nth-child(7),
+    .navbar:target a:nth-child(8),
+    .navbar:target a:nth-child(9),
+    .navbar:target a:nth-child(10){
+        display: block;
+
+    }
+     
+     
+     
+}
