@@ -1,0 +1,141 @@
+body{
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+h1,h2,h3,p{
+    margin: 0 0 .75em 0;
+}
+figure,ul{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.pricing header{
+    text-align: center;
+}
+.pricing header h2{
+    font-size: 1em;
+    font-weight: 400;
+}
+.cont{
+    margin: 50px auto;
+    text-align: center;
+}
+.cont hr{
+    max-width: 150px;
+    margin: 4em 0 2em 0; 
+}
+.cont p{
+    font-size: .75em;
+    color: #444;
+}
+.cont ul{
+    margin-bottom: 2em;
+}
+.cont li{
+    padding: .5em 0;
+    position: relative;
+    left: 1em;
+}
+.cont li::before{
+    position: absolute;
+    left: -1em;
+    content: "V";
+    color: green;
+    font-weight: 900;
+}
+.cont .basic li:last-child:before{
+    content: "X";
+    color: brown;
+    font-weight: 900;
+}
+.cont a{
+    border-radius: 30px;
+    position: relative;
+    bottom: -.5em;
+    padding: 1em 2em;
+    color: white;
+    background-color: #005bea;
+}
+.cont .buisenes a{
+    background-color: white;
+    color: black;
+}
+.cont .consolidation{
+    display: inline-block;
+}
+.cont .basic{
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #aaa;
+    padding: 4em 2em;
+    animation: trans 1s;
+}
+
+.cont .buisenes{
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    margin: 20px;
+    padding: 4em 2em;
+    background-color: #005bea;
+    color: white;
+    animation: trans 1.3s;
+}
+.cont .buisenes p{
+    color: white;
+}
+.cont .premium{
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #aaa;
+    padding: 4em 2em;
+    animation: trans 1.6s;
+}
+.cont .ultimate{
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #aaa;
+    padding: 4em 2em;
+    animation: trans 1.9s;
+}
+@keyframes trans{
+    from{
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+@media(max-width:1300px){
+    .cont .consolidation div{
+        width: 120px;
+    }
+}
+@media(max-width: 1100px){
+    .cont{
+        width: 90%;
+    }
+    .cont .consolidation{
+        display: block;
+    }
+    .cont .consolidation div{
+        width: 250px;
+    }
+}
+@media(max-width:900px){
+    .cont .consolidation div{
+        width: 150px;
+    }
+}
