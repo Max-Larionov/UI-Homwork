@@ -1,0 +1,16 @@
+{
+    "name": "The Air Horner",
+    "short_name": "Airhorner",
+    "description": "The world's best airhorner, and it's free",
+    "icons": [
+
+    ],
+    "screenshots": [
+      
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "green",
+    "theme_color": "red"
+  }
