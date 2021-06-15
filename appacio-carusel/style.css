@@ -1,0 +1,130 @@
+body{
+    background-color: #333;
+}
+.container{
+    margin: 10% auto;
+    width: 80%;
+    border: 1px solid #666;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+.phone-carusel img{
+    transform: scale(.5);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: .5s;
+    opacity: 1;
+}
+.phone-carusel .slick-active img{
+    transform: scale(.6);
+    opacity: .5;
+}
+.phone-carusel .slick-active+.slick-active img{
+    transform: scale(.7);
+    opacity: .75;
+}
+.phone-carusel .slick-active+.slick-active+.slick-active img{
+    transform: scale(.8);
+    opacity: 1;
+}
+.phone-carusel .slick-center+.slick-active img{
+    transform: scale(.7) !important;
+    opacity: .75 !important;
+}
+.phone-carusel .slick-center+.slick-active+.slick-active img{
+    transform: scale(.6) !important;
+    opacity: .5 !important;
+}
+
+.mobile-mock{
+    background: #fff;
+    border: 1px solid #edf4f8;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    width: 16%;
+    border-radius: 36px;
+    padding: 56px 0;
+}
+.mobile-mock::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #ddd;
+    border-radius: 30px;
+    margin: -20px auto;
+}
+.mobile-mock:after {
+    content: "";
+    display: block;
+    margin: 0px auto;
+    width: 9px;
+    height: 9px;
+    background: #ddd;
+    display: block;
+    border-radius: 50%;
+}
+.mobile-mock .circle {
+    left: 42%;
+    bottom: 1%;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    border: 1px solid #999;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+@media (max-width: 1024px){
+    .phone-carusel .slick-active img{
+        transform: scale(.7);
+        opacity: .75;
+    }
+    .phone-carusel .slick-active+.slick-active img{
+        transform: scale(.8);
+        opacity: 1;
+    }
+    .phone-carusel .slick-center+.slick-active img{
+        transform: scale(.7);
+        opacity: .75;
+    }
+    .mobile-mock{
+        width: 26%;
+    }
+    .mobile-mock .circle{
+        width: 28px;
+        height: 28px;
+    }
+}
+@media (max-width: 768px){
+    .phone-carusel .slick-active img{
+        transform: scale(.8);
+        opacity: 1;
+    }
+    .container{
+        margin: 2% auto;
+    }
+    .mobile-mock{
+        width: 75%;
+    }
+    .mobile-mock .circle{
+        width: 62px;
+        height: 62px;
+    }
+}
+@media (max-width: 620px){
+    .mobile-mock .circle{
+        width: 48px;
+        height: 48px;
+    }
+    .mobile-mock{
+        width: 70%;
+    }
+}
