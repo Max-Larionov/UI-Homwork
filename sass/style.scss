@@ -1,0 +1,22 @@
+$size: 100px;
+$colordark: darkgreen;
+$colorlight: Green;
+
+body {
+    background-color: $colordark;
+}
+
+button {
+    width: $size;
+    height: $size;
+    border-radius: 100px;
+    font-size: $size / 4;
+    background: linear-gradient(darken($colorlight, 7%),lighten($colorlight, 50%),darken($colorlight, 7%));
+    border: $size * 0.03 solid darken($colorlight, 7%);
+    color: #333;
+    box-shadow: 0 0 $size * 0.05 $size * 0.03 darken($colordark, 10%);
+    text-shadow: $size * 0.01 $size * 0.01 $size * 0.01 darken($colorlight, 7%), $size * -0.005 $size * -0.005 $size * 0.01 lighten($colorlight, 50%);
+}
+button:hover{
+    background: linear-gradient(lighten($colorlight, 50%),darken($colorlight, 7%),lighten($colorlight, 50%));
+}
