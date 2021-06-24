@@ -1,0 +1,51 @@
+$spacer:  1em;
+$lightColor: #fff;
+$navColor: #234;
+$sideColor: #345;
+$dashColor: #222;
+$flexUnit: 100;
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.navbar{
+    background-color: $navColor;
+    color: $lightColor;
+}
+a{
+    color: $lightColor;
+    text-decoration: none;
+}
+.navbar, .sidebar, .dashboard{
+    padding: $spacer;
+}
+.row{
+    display: flex;
+    flex-grow: $flexUnit;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.sidebar{
+    background-color: $sideColor;
+    color: $lightColor;
+    flex-shrink: $flexUnit * .03;
+}
+.dashboard{
+    background-color: $dashColor;
+    color: $lightColor;
+    flex-grow: $flexUnit * .5;
+}
+#sidebar .ex{
+    display: none;
+}
+#sidebar:target .ex{
+    display: inline;
+}
