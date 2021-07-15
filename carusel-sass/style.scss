@@ -1,0 +1,67 @@
+$darkColor: #222;
+$colls: 36;
+$rows: 24;
+$size: 33px;
+@mixin center{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+@mixin effectFadeOut{
+    animation: fadeOut 15s;
+    animation-delay: .1s * random(5);
+    animation-fill-mode: forwards;
+}
+body{
+    background-color: $darkColor;
+    color: lawngreen;
+
+}
+#carusel{
+    width: $colls * $size;
+    height: $rows * $size;
+    border: $size * .05 solid lighter($darkColor,10%);
+    @include center;
+
+    }
+    .slide{
+        display: grid;
+        grid-template-columns: repeat($colls, $size);
+        grid-template-rows: repeat($colls, $size);
+        width: inherit;
+        height: inherit;
+        text-align: center;
+        line-height: $size;
+        $offX: 0;
+        $offY: 0;
+        @for $n from 1 through $colls * $rows {
+
+            &>div:nth-child(#{$n}){
+                background-image: url(images/1.jpg);
+                background-position-x: $offX * - $size;
+                background-position-y: $offY * - $size;
+                @include effectFadeOut();
+            }
+
+            $offX: $offX +1;
+            @if $offX % $colls==0 {
+                $offX: 0;
+                $offY: $offY +1;
+            }
+            
+            @keyframes fadeOut {
+                0%{opacity: 1;}
+                25%{opacity: 0;}
+                33%{opacity: 1;
+                    background-image: url(images/2.jpg);}
+                50%{opacity: 0;}
+                66%{opacity: 1;
+                    background-image: url(images/3.jpg);}
+                100%{opacity: 0;}  
+            }
+
+    }
+}
