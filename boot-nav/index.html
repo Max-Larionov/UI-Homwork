@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>BootStrap | NavBar!</title>
+    <style>
+        body{
+            background-color: #335;
+        }
+        @media(min-width: 991px){
+            .w-lg-75{
+                max-width: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                BRAND
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="w-lg-75 collapse navbar-collapse justify-content-between " id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href=""> Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href=""> Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> Examples</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> Docs</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""> Contancts</a></li>
+                </ul>
+            
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link"><i class="bi bi-person-fill"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-bag-fill"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Your Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between"><img src="images/ip-11.webp" alt="IPhone-11"><span>IPhone-11</span><span>13</span> <span>$599</span></li>
+                    <li class="list-group-item d-flex justify-content-between"><img src="images/ip-12.webp" alt="IPhone-12"><span>IPhone-12</span><span>9</span><span>$999</span></li>
+                    <li class="list-group-item d-flex justify-content-between"><img src="images/ip-se.webp" alt="IPhone-SE"><span>IPhone-SE</span><span>19</span><span>$399</span></li>
+                  </ul>
+                  <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><img src="images/mi-10.webp" alt="Xiaomi mi-10"></th>
+                          <td>Xiaomi Mi 10</td>
+                          <td>23</td>
+                          <td>$300</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img src="images/mi-11.webp" alt="Xiaomi mi-11"></th>
+                          <td>Xiaomi Mi 11</td>
+                          <td>23</td>
+                          <td>$500</td>
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row"><img src="images/redmi-k20.webp" alt="Xiaomi Redmi-k20"></th>
+                          <td>Xiaomi RedMi k20</td>
+                          <td>27</td>
+                          <td>$400</td>
+                        </tr>
+                      </tbody>
+                  </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Check Out</button>
+              <button type="button" class="btn btn-danger">Empty Items</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
