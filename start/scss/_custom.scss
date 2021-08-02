@@ -1,0 +1,166 @@
+
+  // Style Bootstrap icons
+  .vh-100{
+    height: 100vh;
+  }
+  .h-100{
+    height: 100%;
+  }
+  .w-100{
+   width: 100%;
+  }
+  .bi {
+    fill: currentColor;
+    }
+  #navbar{
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    .container-fluid{
+      width: 100%;
+      .navbar-toggler{
+        right: 1rem;
+      }
+      img{
+        filter: invert(1);
+      }
+      #navbarNavDropdown{
+        flex-grow: unset;
+        .nav-link{
+          @include font-size($font-size-xsm);
+        }
+        .link-lg{
+          @include font-size($font-size-lg);
+          padding-top: 0;
+        }
+    }
+  }
+ 
+
+}
+#carouselHeader {
+  z-index: 100;
+  border-bottom: 30px solid white;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    animation: zoomOut 7s;
+  }
+  .zoomIn{
+    animation: zoomIn 7s;
+  }
+  
+  @keyframes zoomOut {
+    from{transform: scale(1.2);}
+    to{transform: scale(1);}
+  }
+  @keyframes zoomIn {
+    from{transform: scale(1);}
+    to{transform: scale(1.2);}
+  }
+    
+}
+
+
+// extention
+.carousel-caption{
+  top: 1.25rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 45%;
+  right: 10%;
+
+  .caption-text{
+    white-space: nowrap;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    color: $persian-orange;
+    letter-spacing: 0px;
+    font-family: "Great Vibes";
+  }
+  .caption-h{
+    white-space: nowrap;
+    font-size: 95px;
+    line-height: 100px;
+    font-weight: 600;
+  }
+  .caption-slide{
+    max-width: 180px;
+  }
+  .fst-italic{
+    font-style: italic;
+    font-weight: $font-weight-light;
+  }
+
+  .btn{
+    position: relative;
+    margin: $input-btn-padding-y;
+    
+
+      &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: -$input-btn-padding-y;
+        right: -$input-btn-padding-y;
+        bottom: -$input-btn-padding-y;
+        left: -$input-btn-padding-y;
+        border: 1px solid;
+        border-color: inherit;
+      }
+  }
+}
+
+
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__group {
+  position: relative;
+  top: 10vh;
+  height: 60vh;
+  transform-style: preserve-3d;
+}
+
+
+
+.parallax__layer--base {
+  transform: translateZ(0px) ;
+  position: absolute;
+  width: 60%;
+  margin: 0 auto;
+  top: 20vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+  height: 60vh;
+  object-fit: cover;
+  position: absolute;
+  top: -20vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -5;
+}
+section{
+  position: relative;
+  top: -20vh;
+  transform: translateZ(0px) ;
+  height: 100vh;
+  z-index: 100;
+  box-sizing: border-box;
+  border-top: 30px solid white;
+
+}
