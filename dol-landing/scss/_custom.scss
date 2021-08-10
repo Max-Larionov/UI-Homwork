@@ -1,0 +1,284 @@
+
+  // Style Bootstrap icons
+  .vh-100{
+    height: 100vh;
+  }
+  .h-100{
+    height: 100%;
+  }
+  .w-100{
+   width: 100%;
+  }
+  .bi {
+    fill: currentColor;
+    }
+  #navbar{
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    .container-fluid{
+      width: 100%;
+      .navbar-toggler{
+        right: 1rem;
+      }
+      img{
+        filter: invert(1);
+      }
+      #navbarNavDropdown{
+        flex-grow: unset;
+        .nav-link{
+          @include font-size($font-size-xsm);
+        }
+        .link-lg{
+          @include font-size($font-size-lg);
+          padding-top: 0!important;
+        }
+    }
+  }
+ 
+
+}
+#carouselHeader {
+  z-index: 100;
+  border-bottom: 30px solid white;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    animation: zoomOut 7s;
+  }
+  .zoomIn{
+    animation: zoomIn 7s;
+  }
+  
+  @keyframes zoomOut {
+    from{transform: scale(1.2);}
+    to{transform: scale(1);}
+  }
+  @keyframes zoomIn {
+    from{transform: scale(1);}
+    to{transform: scale(1.2);}
+  }
+    
+}
+
+
+// extention
+.carousel-caption{
+  top: 1.25rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 45%;
+  right: 10%;
+
+
+  .btn{
+    position: relative;
+    margin: $input-btn-padding-y;
+    
+
+      &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: -$input-btn-padding-y;
+        right: -$input-btn-padding-y;
+        bottom: -$input-btn-padding-y;
+        left: -$input-btn-padding-y;
+        border: 1px solid;
+        border-color: inherit;
+      }
+  }
+}
+.section-story{
+  text-align: center;
+  position: relative;
+  transform: translateZ(0px) ;
+  height: 80vh;
+  z-index: 100;
+  box-sizing: border-box;
+  background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-1-1.jpg);
+  background-position: 50%;
+   
+    .caption-story{
+      position: absolute;
+      top: 1.25rem;
+      bottom: 1.25rem;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      left: 30%;
+      right: 30%;
+
+
+      .caption-text{
+        font-size: 50px;
+        line-height: 60px;
+      }
+      .caption-h{
+        white-space: nowrap;
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 500;
+      }
+    }
+}
+
+.caption-text{
+  white-space: nowrap;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+  color: $persian-orange;
+  letter-spacing: 0px;
+  font-family: "Great Vibes";
+}
+.caption-h{
+  white-space: nowrap;
+  font-size: 95px;
+  line-height: 100px;
+  font-weight: 600;
+}
+.caption-slide{
+  max-width: 180px;
+}
+.fst-italic{
+  font-style: italic;
+  font-weight: $font-weight-light;
+}
+
+
+.parallax-container{
+  position: relative;
+  height: 60vh;
+
+  .rellax{
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    bottom: -80vh;
+    right: 0;
+    height: 120vh;
+    background-size: cover;
+    background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-2-1.jpg);
+    background-position: 50%;
+  }
+}
+
+.section-story2{
+  padding: 10vh 0;
+  background-color: #fff;
+  flex-direction: column;
+  text-align: center;
+  transform: translateZ(0px) ;
+  height: 120vh;
+  top: 0vh;
+  box-sizing: border-box;
+  z-index: 100;
+  
+    .caption-story{
+      color: black;
+
+        .caption-text{
+          font-size: 50px;
+          line-height: 60px;
+        }
+        .caption-h{
+          white-space: nowrap;
+          font-size: 60px;
+          line-height: 65px;
+          font-weight: 500;
+        }
+
+    }
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .shop-item{
+        position: relative;
+        width: 33%;
+        .buy{
+          position: absolute;
+          height: 250px;
+          top: 37.5%;
+          left: 37.5%;
+          z-index: -1;
+         .buy-item{
+          color: black;
+          text-decoration: none;
+         }
+        }
+        .shop-image{
+          position: relative;
+          width: 75%;
+          margin: 0 auto;
+          img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+}
+.section-photo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 97vh;
+  .photo{
+    width: 98%;
+    img{
+      width: 100%;
+    }
+  }
+  .photo:nth-child(3){
+    width: 99%;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+.section-prices{
+  margin-top: 10vh;
+  height: 80vh;
+  text-align: center;
+    .caption-text{
+      font-size: 50px;
+      line-height: 60px;
+    }
+    .caption-h{
+      white-space: nowrap;
+      font-size: 60px;
+      line-height: 65px;
+      font-weight: 500;
+    }
+    .container{
+      margin-top: 5vh;
+      display: flex;
+      justify-content: space-between;
+      .card-body{
+        position: relative;
+        width: 20%;
+        padding-top: 2rem;
+        border: 1px solid $persian-orange;
+        height: 40vh;
+        .caption-h{
+          font-size: 30px;
+          line-height: 35px;
+          font-weight: 500;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .card-body:nth-child(2){
+        border: 2px solid $persian-orange;
+        height: 45vh;
+        top: -2.5vh;
+      }
+  }
+}
