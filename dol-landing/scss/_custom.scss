@@ -227,22 +227,59 @@
       }
     }
 }
-.section-photo{
+.section-folio{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 97vh;
-  .photo{
-    width: 98%;
-    img{
-      width: 100%;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  gap: 5px;
+   
+    figure{
+      position: relative;
+      margin: 0;
     }
-  }
-  .photo:nth-child(3){
-    width: 99%;
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
+    figure:hover figcaption{
+      opacity: 1;
+      transition: 1s;
+    }
+    img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    :nth-child(3){
+      grid-column-start: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    :last-child{
+      grid-row-start: 2;
+      grid-column-start: 4;
+      
+    }
+    figcaption{
+      padding: 8%;
+      text-align: center;
+      opacity: 0;
+      position: absolute;
+      z-index: 1;
+      outline: 30px solid white;
+      border: 1px solid $persian-orange;
+      right: 15%;
+      bottom: 10%;
+      left: 15%;
+      background-color: white;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      a:hover{
+        color: $persian-orange;
+      }
+    }
+   
 }
 .section-prices{
   margin-top: 10vh;
