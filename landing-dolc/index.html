@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Bootstrap npm starter</title>
+  </head>
+  <body>
+    <header id="header">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo-img-light-1.png" alt="" width="40" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+              
+              <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    HOME
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PORTFOLIO
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SHOP
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    BLOG
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ELEMENTS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-lg" href="#"><i class="bi bi-search"></i></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle link-lg" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bag"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-lg" href="#"><i class="bi bi-list"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- CAROUSEL -->
+        <div id="carouselHeader" class="carousel slide vh-100" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner h-100">
+
+            <div class="carousel-item h-100 active">
+              <img src="assets/images/h1-slide-1.jpg" class="h-100 zoomIn " alt="...">
+              <div class="carousel-caption">
+                <span class="caption-text">Sweet bites for you</span>
+                <h5 class="caption-h">TASTEFUL</h5>
+                <div>
+                  <img src="assets/images/2.png" class="caption-slide" alt="">
+                </div>
+                <p class="fst-italic">It’s always good time for sweets! Made with care and prepared with love, our sweets are all you might need to make every day special. Find your favorite now. </p>
+                <div>
+                  <a href="" class="btn btn-primary">Discover</a>
+                  <a href="" class="btn btn-outline-secondary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item h-100">
+              <img src="assets/images/h1-slide-2.jpg" class="h-100 " alt="...">
+              <div class="carousel-caption">
+                <span class="caption-text">All for a special day</span>
+                <h5 class="caption-h">DELIGHT</h5>
+                <div>
+                  <img src="assets/images/2.png" class="caption-slide " alt="">
+                </div>
+                <p class="fst-italic">It’s always good time for sweets! Made with care and prepared with love, our sweets are all you might need to make every day special. Find your favorite now. </p>
+
+                <div>
+                  <a href="" class="btn btn-primary">Discover</a>
+                  <a href="" class="btn btn-outline-secondary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item h-100">
+              <img src="assets/images/h1-slide-3.jpg" class=" h-100 zoomIn" alt="...">
+              <div class="carousel-caption">
+                <span class="caption-text">Chocolate love</span>
+                <h5 class="caption-h">LOVLY</h5>
+                <div>
+                  <img src="assets/images/2.png" class="caption-slide" alt="">
+                </div>
+                <p class="fst-italic">It’s always good time for sweets! Made with care and prepared with love, our sweets are all you might need to make every day special. Find your favorite now. </p>
+
+                <div>
+                  <a href="" class="btn btn-primary">Discover</a>
+                  <a href="" class="btn btn-outline-secondary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item h-100">
+              <img src="assets/images/h1-slide-4.jpg" class=" h-100" alt="...">
+              <div class="carousel-caption">
+                <span class="caption-text">Lovly fruit</span>
+                <h5 class="caption-h">Biscuits</h5>
+                <div>
+                  <img src="assets/images/2.png" class="caption-slide" alt="">
+                </div>
+                <p class="fst-italic">It’s always good time for sweets! Made with care and prepared with love, our sweets are all you might need to make every day special. Find your favorite now. </p>
+
+                <div>
+                  <a href="" class="btn btn-primary">Discover</a>
+                  <a href="" class="btn btn-outline-secondary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+    </header>
+
+    <section class="section-story">
+      <div class="caption-story">
+            <span class="caption-text">familly tradition</span>
+            <h5 class="caption-h">OUR STORY</h5>
+            <div>
+              <img src="assets/images/2.png" class="caption-slide" alt="">
+            </div>
+            <p class="fst-italic">It’s always good time for sweets! Made with care and prepared with love, our sweets are all you might need to make every day special. Find your favorite now. </p>
+      </div>
+    </section>
+
+    <div class="parallax-container">
+      <h5 class="caption-text">If there's no chocolate in Heaven, I'm not going.</h5>
+      <div class="rellax" data-rellax-speed="7"></div>
+    </div>
+  
+    <section class="section-story2">
+
+          <div class="caption-story">
+            <span class="caption-text">we know that</span>
+            <h5 class="caption-h">TRUFFLE IS ART</h5>
+              <div>
+                <img src="assets/images/2.png" class="caption-slide" alt="">
+              </div>
+              <p class="fst-italic">It’s always good time for sweets! Made with care and prepared with love, our sweets are all you might need to make every day special. Find your favorite now. </p>
+          </div>
+
+          <div class="container">
+            <div class="shop-item">
+              <div class="shop-image">
+                <img src="assets/images/trufel-1.jpg" alt="">
+              </div>
+              <div class="buy">
+                <a class="buy-item" href="">ADD To Cart</a>
+              </div>
+              <div>
+                <h5>COCONUT TRUFFLE</h5>
+                <p class="fst-italic">Cupcakes, Truffles, Chocobar</p>
+                <div> <span>$9</span></div>
+              </div>
+            </div>
+
+            <div class="shop-item">
+              <div class="shop-image">
+                <img src="assets/images/trufel-2.jpg" alt="">
+              </div>
+              <div>
+                <h5>PEANUT TRUFFLE</h5>
+                <p class="fst-italic">Cupcakes, Truffles, Chocobar</p>
+                <div><span>$15</span></div>
+              </div>
+            </div>
+
+            <div class="shop-item">
+              <div class="shop-image">
+                <img src="assets/images/trufel-3.jpg" alt="">
+              </div>
+              <div>
+                <h5>S’MORES TRUFFLE</h5>
+                <p class="fst-italic">Cupcakes, Truffles, Chocobar</p>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="shop-item">
+              <div class="shop-image">
+                <img src="assets/images/trufel-4.jpg" alt="">
+              </div>
+              <div>
+                <h5>SEA SALT TRUFFLE</h5>
+                <p class="fst-italic">Cupcakes, Truffles, Chocobar</p>
+                <div><span>$15</span> </div>
+              </div>
+            </div>
+
+            <div class="shop-item">
+              <div class="shop-image">
+                <img src="assets/images/trufel-5.jpg" alt="">
+              </div>
+              <div>
+                <h5>CINNAMON TRUFFLE</h5>
+                <p class="fst-italic">Cupcakes, Truffles, Chocobar</p>
+                <div><span>$9</span></div>
+              </div>
+            </div>
+
+            <div class="shop-item">
+              <div class="shop-image">
+                <img src="assets/images/trufel-6.jpg" alt="">
+              </div>
+              <div>
+                <h5>ALMOND TRUFFLE</h5>
+                <p class="fst-italic">Cupcakes, Truffles, Chocobar</p>
+                <div><span>$13</span></div>
+              </div>
+            </div>
+          </div>
+    </section> 
+
+    <section class="section-folio">
+
+      <figure>
+        
+          <img src="assets/images/section-photo-1.jpg" alt="">
+        
+        <figcaption>
+          <h3>CREAM TART</h3>
+          <p class="fst-italic"> <a href="">Wedding Cakes</a> </p>
+        </figcaption>
+      </figure>
+      <figure>
+        
+          <img src="assets/images/section-photo-2.jpg" alt="">
+        
+        <figcaption>
+          <h3>FRUIT CAKES</h3>
+          <p class="fst-italic"> <a href="">Wedding Cakes</a> </p>
+        </figcaption>
+      </figure>
+      <figure>
+        
+          <img src="assets/images/section-photo-3.jpg" alt="">
+        
+        <figcaption>
+          <h3>PEAR CAKE</h3>
+          <p class="fst-italic"> <a href="">Wedding Cakes</a> </p>
+        </figcaption>
+      </figure>
+      <figure>
+        
+          <img src="assets/images/section-photo-4.jpg" alt="">
+        
+        <figcaption>
+          <h3>BERRY PIE</h3>
+          <p class="fst-italic"> <a href="">Wedding Cakes</a> </p>
+        </figcaption>
+      </figure>
+      <figure>
+        
+          <img src="assets/images/section-photo-5.jpg" alt="">
+        
+        <figcaption>
+          <h3>TIRAMISU</h3>
+          <p class="fst-italic"> <a href="">Wedding Cakes</a> </p>
+        </figcaption>
+      </figure>
+      <figure>
+        
+          <img src="assets/images/section-photo-6.jpg" alt="">
+        
+        <figcaption>
+          <h3>PEACH PIE</h3>
+          <p class="fst-italic"> <a href="">Wedding Cakes</a> </p>
+        </figcaption>
+      </figure>
+      <figure>
+        
+          <img src="assets/images/section-photo-7.jpg" alt="">
+        
+        <figcaption>
+          <h3>CHOCO ROLL</h3>
+          <p class="fst-italic"> <a href="">Wedding Cakes</a> </p>
+        </figcaption>
+      </figure> 
+
+    </section>
+
+    <section class="section-prices">
+
+      <div class="caption-story">
+        <span class="caption-text">enjoy each bite</span>
+        <h5 class="caption-h">OUR PRICES</h5>
+        <div>
+          <img src="assets/images/2.png" class="caption-slide" alt="">
+        </div>
+        <p class="fst-italic">It’s always good time for sweets! Made with care and prepared with love, our sweets are all you might need to make every day special. Find your favorite now. </p>
+      </div>
+
+      <div class="container fst-italic">
+
+       
+
+          
+          <div class="card-body">
+            <h5 class="card-title caption-text">standard</h5>
+            <div class="caption-h">$119</div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+
+       
+          <div class="card-body">
+            <h5 class="card-title caption-text">hot new</h5>
+            <div class="caption-h">$179</div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title caption-text">delights</h5>
+            <div class="caption-h">$219</div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+
+       
+          <div class="card-body">
+            <h5 class="card-title caption-text">deluxe</h5>
+            <div class="caption-h">$279</div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+
+       
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax');
+    </script>
+  </body>
+</html>

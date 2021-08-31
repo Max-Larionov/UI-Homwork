@@ -1,0 +1,144 @@
+// Colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+
+// scss-docs-start color-variables
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+//CUSTOM PALETTES
+
+$smokyBlack: #1c1613ff;
+$platinum: #e7e2ddff;
+$chestnut: #974d35ff;
+$persian-orange: rgb(193, 157, 86);
+$spanish-gray: #909594ff;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":            $blue,
+  "indigo":          $indigo,
+  "purple":          $purple,
+  "pink":            $pink,
+  "red":             $red,
+  "orange":          $orange,
+  "yellow":          $yellow,
+  "green":           $green,
+  "teal":            $teal,
+  "cyan":            $cyan,
+  "white":           $white,
+  "gray":            $gray-600,
+  "gray-dark":       $gray-800,
+  "$smokyBlack":     $smokyBlack,
+  "$platinum":       $platinum,
+  "$chestnut":       $chestnut,
+  "$persian-orange": $persian-orange,
+  "$spanish-gray":   $spanish-gray
+  );
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+$theme-colors: (
+  "primary":    $smokyBlack,
+  "secondary":  $persian-orange,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+
+
+//FONTS
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-decor: 'Great Vibes', cursive;
+
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 5)
+  ),
+  $spacers
+);
+
+$navbar-padding-y:                  $spacer * 2;
+$navbar-padding-x:                  $spacer * 3;
+
+$navbar-nav-link-padding-x:         $spacer;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+//NAV
+$black: #000 ;
+$navbar-light-color:         $persian-orange;
+$navbar-light-hover-color:         $persian-orange;
+$navbar-light-disabled-color:      $persian-orange;
+$navbar-light-active-color:        $persian-orange;
+$navbar-nav-link-padding-x: $spacer * 1.5;
+$navbar-light-color:                rgba($black, .9);
+$font-size-base:              1rem;
+$font-size-xsm:                $font-size-base * .8;
+$font-weight-b-normal:          500;
+$font-weight-base:            $font-weight-b-normal;
+
+
+
+
+// Button
+$btn-border-radius:           0;
+$btn-border-radius-sm:        0;
+$btn-border-radius-lg:        0;
+
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         .75rem;
+
+$btn-padding-y:               $input-btn-padding-y ;
+$btn-padding-x:               $input-btn-padding-x *3;
+
